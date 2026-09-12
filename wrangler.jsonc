@@ -1,0 +1,19 @@
+{
+  "$schema": "./node_modules/wrangler/config-schema.json",
+  "name": "mistakebook",
+  "main": "index.js",
+  "compatibility_date": "2026-09-12",
+  "assets": {
+    "directory": ".",
+    "binding": "ASSETS",
+    "run_worker_first": ["/api/*"]
+  },
+  "ai": {
+    "binding": "AI"
+  },
+  "d1_databases": [
+    {
+      "binding": "DB","database_id": "f14df2cd-50e6-4991-bfb4-1db0ea608bbf","database_name": "mistake-book"
+    }
+  ]
+}
